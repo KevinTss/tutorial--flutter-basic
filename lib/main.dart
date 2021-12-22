@@ -28,7 +28,11 @@ class BasicPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('App name'),
       ),
-      body:  const Text('hello wolrd'),
+      body: simpleText('hello wolrd'),
     );
   }
+}
+
+simpleText(text) {
+  return Text(text, style: const TextStyle(color: Color(0xff1d254f)));
 }
